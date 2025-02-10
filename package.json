@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.7"
+    "astro": "^5.1.7",
+    "astro-theme-meo": "https://github.com/miaobuao/astro-theme.git"
   }
 }
