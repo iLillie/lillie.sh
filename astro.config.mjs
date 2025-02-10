@@ -6,7 +6,7 @@ export default defineConfig({
 	integrations: [
 		theme({
 			site: {
-				title: `lillie.sh`,
+				title: `ctf.lillie.sh`,
 				description: 'ctf-player and nerd :3',
 				locale: 'en-GB',
 				url: 'https://lillie.sh',
