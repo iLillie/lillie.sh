@@ -38,7 +38,7 @@ So we can assume the logic within the command will be important.
 ## Bot behaviour
 So Discord bots by default can be invited by anyone if you do not change any default settings. You need to have the correct url and the id from the bot to invite it to your own server. So it's important to hardcode to make sure your bot only responds to actions on your server.
 
-When looking at the code for `!verifyme` command, I saw it does not use [[snowflake id]] when checking entities.
+When looking at the code for `!verifyme` command, I saw it does not use snowflake id when checking entities.
 
 ```python
 def check(reaction, reactor):
@@ -91,7 +91,7 @@ Looking at the code above the check, we can see this is the message sent to the 
     verification_msg = await verification_channel.send(msg)
 ```
 
-Discord mention uses the [[snowflake id]] in the mention format, so the message would actually be 
+Discord mention uses the snowflake id in the mention format, so the message would actually be 
 
 ```
 <@1234567890> has requested verification. Moderators with <@&0987654321>, please verify.
@@ -121,23 +121,23 @@ So I react with checkmark on the message I sent in the **dummy1** server and I c
 I use [Discord Permissions Calculator](https://discordapi.com/permissions.html#0) to invite the bot with copying the bot id and using it as client id. Giving it administrator role.
 
 And it works
-![[admin-bot-joins.png]]
+![admin bot joins](./assets/admin-bot-joins.png)
 
 I post the following message in the verification channel
 
-![[requested-verification.png]]
+![requested verification](./assets/requested-verification.png)
 
 Next step is now to send `!verifyme` in the DDC Admin Server bot-spam channel
 
-![[verifyme-command-admin-server.png]]
+![verifyme command admin server](./assets/verifyme-command-admin-server.png)
 
 I go to my server and add the checkmark and hope for the best. 
 
-![[checkmark-verification.png]]
+![checkmark verification](./assets/checkmark-verification.png)
 
 I go back to the server and I see myself under the member role!
 
-![[member_list.png]]
+![member list](./assets/member_list.png)
 
 And now we have access to the challenge-writeups channel and there is the message with the flag!
 
