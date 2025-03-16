@@ -75,7 +75,7 @@ I spent an extra time trying to do some OSINT and see if I could get info, but I
 ## Time to do research
 After a failed reverse engineering attempt, I started to focus on research with information from blog posts and previous ctf writeups. I usually use keywords like `ctf` `forensics` and other things that could be useful.
 
-After a few searches I find this writeup https://g0blin.co.uk/hack-lu-ctf-2015-dr-bob-writeup/ where it uses package [[AESKeyFind]] to extract the AES keys from a memory dump.
+After a few searches I find this writeup https://g0blin.co.uk/hack-lu-ctf-2015-dr-bob-writeup/ where it uses package [AESKeyFind](https://github.com/makomk/aeskeyfind) to extract the AES keys from a memory dump.
 
 So I thought it could be worth a try here as I haven't been able to find the password directly, nor been able to reverse engineer the bootloader.
 
@@ -92,7 +92,7 @@ Part of the data seemed to be encrypted or corrupted, so I renamed the decrypted
 
 I then noticed these lines that seemed to be encrypted data.
 
-![[gimp-encrypt-noise.png]]
+![gimp encrypt noise](./assets/gimp-encrypt-noise.png)
 
 This left me a bit uncertain if I used wrong AES encryption. I then looked into disk encryption and found out this about [ESSIV](https://en.wikipedia.org/wiki/Disk_encryption_theory#Encrypted_salt-sector_initialization_vector_(ESSIV)) which stands for "Encrypted salt-sector initialization vector". 
 TLDR it's a way to have unique IV for each boot sector that prevents attacks.
@@ -170,7 +170,7 @@ I opened a ticket to confirm if this was intended solve, as it seemed weird for 
 
 I got informed the flag is ASCII text art, and it was a way to prevent flag being easy extracted using grep command.
 
-![[flag-ascii-art.png]]
+![flag ascii art](./assets/flag-ascii-art.png)
 
 It caused confusion for many, and I assume there might be some who figured it out it was ascii art. I'm not a fan of ascii art because of how it disrupts screen readers.
 
