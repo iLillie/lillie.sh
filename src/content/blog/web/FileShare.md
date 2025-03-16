@@ -1,12 +1,18 @@
 ---
-title: FileShare - openECSC 2024
+title: FileShare
 date: 2025-01-18 11:00:00
-tags: [web, php]
+tags: [web, php, openECSC-2024]
 draft: false
 heroImage: ./assets/openECSC.png
 ---
 
-# FileShare - openECSC 2024
+<style>
+.basis-1\/5{flex-basis: 5% !important;}
+.max-w-prose{max-width: 100ch !important;}
+.prose{max-width: 100ch !important;}
+</style>
+
+# FileShare
 
 ```
 You can now share your files for free thanks to our new disruptive technology!

@@ -1,10 +1,18 @@
 ---
-title: Great Offers - Säkerhets-SM 2025
+title: Great Offers
 date: 2025-01-19 22:00:00
-tags: [web, python, flask]
+tags: [web, python, flask, Säkerhets-SM 2025]
 draft: false
 heroImage: ./assets/sakerhets-sm.png
 ---
+
+<style>
+.basis-1\/5{flex-basis: 5% !important;}
+.max-w-prose{max-width: 100ch !important;}
+.prose{max-width: 100ch !important;}
+</style>
+
+# Great Offers
 
 ```
 I got some really annoying spam SMS the other day. 
